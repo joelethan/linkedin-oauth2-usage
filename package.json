@@ -1,5 +1,5 @@
 {
-  "name": "@joelethan/linkedin-oauth2",
+  "name": "linkedin-oauth2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
