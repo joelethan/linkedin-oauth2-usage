@@ -1,10 +1,8 @@
 import express from "express";
-import fetch from "node-fetch";
+import { linkedInMiddleware, callbackMiddleware } from "@joelethan/linkedin-oauth2";
 const app = express()
 const port = 5002
-import { linkedInMiddleware, callbackMiddleware } from "./middlewares";
-
-app.get('/', linkedInMiddleware, (req, res) =>{
+app.get('/linkedin', linkedInMiddleware, (req, res) =>{
     const profile = req.query.profile;
     res.json({profile})
 })
